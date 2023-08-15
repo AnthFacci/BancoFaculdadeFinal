@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/iB.png">
+    <!-Fontes->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,100;1,300&family=Ubuntu:wght@300;400&display=swap"
+            rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContent">
+        <!-- Login -->
+        <div class="name" id="">
+            <h2>Bank</h2>
+            <input type="text" id="inputName" placeholder="Digite seu nome" required>
+            <button id="btnName">Registrar</button>
+        </div>
+        <!--Definir o tipo da conta inicial-->
+        <div class="altenarConta" id="none6">
+            <h2>Escolha o tipo da sua conta!</h2>
+            <button id="defTotal" class="btnSwitchAcount">Conta Total</button>
+            <button id="defxSimples" class="btnSwitchAcount">Conta Simples</button>
+            <button id="defEconomic" class="btnSwitchAcount">Conta Econômica</button>
+        </div>
+        <!-- Menu -->
+        <div class="menuScreen" id="none">
+            <h2>Bem-vindo cliente <span id="cliente">x</span></h2>
+            <h3>Escolha a opção que deseja</h3>
+            <button class="btnFuncion" id="deposito">Depósito</button>
+            <button class="btnFuncion" id="saque">Saque</button>
+            <button class="btnFuncion" id="saldoConta">Saldo em conta</button>
+            <button class="btnFuncion" id="typeAcount">Alternar tipo da conta</button>
+            <button class="btnFuncion" id="mensalidade">Mensalidade</button>
+            <button class="btnFuncion" id="sair">Sair</button>
+        </div>
+        <!-- Deposito -->
+        <div class="depositScreen" id="none2">
+            <h2>Depositar</h2>
+            <input type="text" id="depositValue" placeholder="Digite o valor do depósito" required>
+            <div class="btnDeposit">
+                <button id="btnDeposito">Depositar</button>
+                <button id="voltar">Voltar ao menu</button>
+            </div>
+        </div>
+        <!--Saque-->
+        <div class="saqueScreen depositScreen" id="none3">
+            <h2>Sacar</h2>
+            <input type="text" id="saqueValue" placeholder="Digite o valor do saque" required>
+            <div class="btnSaque btnDeposit">
+                <button id="btnSaque">Saque</button>
+                <button id="BtnVoltar">Voltar ao menu</button>
+            </div>
+        </div>
+        <!--Saldo da conta-->
+        <div class="saldoEmConta" id="none4">
+            <div class="saldo">
+                <p>Saldo em conta atual: $<span id="saldo">0</span></p>
+            </div>
+            <div>
+                <button id="voltarMenu">Voltar</button>
+            </div>
+        </div>
+        <!--Alterar tipo da conta-->
+        <div class="altenarConta2" id="none5">
+            <h2>Modifique o tipo da sua conta!</h2>
+            <button id="maxTotal" class="btnSwitchAcount">Conta Total</button>
+            <button id="maxSimples" class="btnSwitchAcount">Conta Simples</button>
+            <button id="maxEconomic" class="btnSwitchAcount">Conta Econômica</button>
+            <button id="btnVoltarSwitch" class="btnSwitchAcount">Voltar</button>
+        </div>
+        <!--Menu Mensalidade -->
+        <div class="menuMensalidade" id="none7">
+            <h2>Confira a sua mensalidade!</h2>
+            <p>Mensalidade: $<span id="mensal">0</span></p>
+            <button id="btnVoltarMensalidade" class="btnSwitchAcount">Voltar</button>
+        </div>
+    </div>
+</body>
+
+</html>
